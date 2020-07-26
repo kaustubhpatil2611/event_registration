@@ -13,6 +13,7 @@ function changehead()
 	document.getElementById("two").style.display="none";
 	document.getElementById("three").style.display="none";
 	document.getElementById("one").style.display="";
+	document.getElementById("vsubmit").innerHTML="";
 }
 
 function changereg()
@@ -21,6 +22,7 @@ function changereg()
 	document.getElementById("one").style.display="none";
 	document.getElementById("three").style.display="none";
 	document.getElementById("two").style.display="";
+	document.getElementById("vsubmit").innerHTML="";
 }
 
 function changeshow()
@@ -29,6 +31,7 @@ function changeshow()
 	document.getElementById("one").style.display="none";
 	document.getElementById("two").style.display="none";
 	document.getElementById("three").style.display="";
+	document.getElementById("vsubmit").innerHTML="";
 }
 
 
@@ -68,7 +71,7 @@ function addregister()
 		var quest=document.myform.questions.value;
 		var app=document.myform.approve.value;
 		var d = new Date();
-	    var ts= d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getFullYear()+"  "+d.getHours()+":"+d.getMinutes();	    
+		var ts = d.toUTCString();
 		cell1.innerHTML = name+" "+lname;
 		cell2.innerHTML = mail;
 		cell3.innerHTML = college;

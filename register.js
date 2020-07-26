@@ -111,6 +111,7 @@ function validate()
 	else{
 		addregister();
 		document.getElementById("none1").style.display="none";
+		document.getElementById("vsubmit").innerHTML="Registered successfully!";
 		return false;
 	}
 	
